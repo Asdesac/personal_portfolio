@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        
+        }
+    
+        .contact-section {
+          background-color: #f1f1f1;
+          padding: 40px 0;
+          text-align: center;
+        }
+    
+        .contact-section h2 {
+          margin-bottom: 20px;
+        }
+    
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+    
+        .social-icons a {
+          display: inline-block;
+          margin: 0 10px;
+          color: #333;
+          font-size: 24px;
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .social-icons a:hover {
+          transform: scale(1.2);
+        }
+    
+        .social-icons .fa {
+          padding: 10px;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label> <br>
+        <textarea name="message" id="#" cols="10" rows="12"></textarea>
+        <input style="background-color: blue;" type="submit" value="Submit">
+    </form>
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            <i class="fab fa-linkedin-in fa"  style="background-color: rgb(132, 255, 0);"></i>
+            linkedin
+          </a>
+          <a href="https://twitter.com/your-twitter-handle" target="_blank">
+            <i class="fab fa-twitter fa"  style="background-color: rgb(255, 0, 0);"></i>
+            twitter
+          </a>
+          <a href="https://github.com/Asdesac" target="_blank">
+            <i class="fab fa-github fa"  style="background-color: rgb(0, 255, 128);"></i>
+            github
+          </a>
+          <a href="mailto:asdesach875@gmail.com">
+            <i class="fas fa-envelope fa"></i>
+            email
+          </a>
+        </div>
+      </section>
+    
+</body>
+</html>

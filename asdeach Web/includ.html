@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header></header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of the website.</p>
+  </main>
+
+  <footer></footer>
+
+  <script>
+    fetch("header.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("header").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(response => {
+        return response.text()
+      })
+      .then(data => {
+        document.querySelector("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

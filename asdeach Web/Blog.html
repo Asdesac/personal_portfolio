@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog - Page</title>
+    <style>
+        .blog-section {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.blog-post {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-post-title {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog-post-excerpt {
+  padding: 0 20px 20px;
+  color: #666;
+}
+
+.read-more-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2f80ed;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more-link:hover {
+  background-color: #1a66d6;
+}
+    </style>
+</head>
+<body>  
+
+    <section class="blog-section">
+        <h2 class="section-title">My Blog</h2>
+        <div class="blog-grid">
+          <article class="blog-post">
+            <img src="image\photo_2023-10-26_00-54-48-removebg-preview (1).png" alt="Blog Post Image" class="blog-post-image">
+            <h3 class="blog-post-title">Team Worker <br>share experience </h3>
+            <p class="blog-post-excerpt">right project 👫<br>to the right customer 🚻<br> at the right time!!!.⌚</p>
+            <a href="#" class="read-more-link">Hire Me</a>
+          </article>
+          <!-- Add more blog post articles as needed -->
+        </div>
+      </section>
+
+
+
+       <h4 style="color: blueviolet;">I give proirity to the my custumers satisfaction ♻</h4>
+        <b>Check out my latest blog posts:</b>
+            <h4>My Journey as a Web Developer</h4>
+            <b>In this post, I share my experiences and lessons learned as I've navigated the world of web development over the past few years.</b>
+            <a href="#">Read More</a>
+            <h4>The Importance of User Experience in Web Design</h4>
+            <b>Explore the key principles of effective user experience design and how they can help improve the overall quality of a website.</b>
+            <a href="#">Read More</a>
+            <h4>Staying Productive as a Remote Worker</h4>
+            <b>In this post, I share my top tips and strategies for staying focused, motivated, and productive while working remotely.</b>
+            <a href="#">Read More</a>
+            <script  type="text/javascript">
+
+const blogPosts = document.querySelectorAll('.blog-post');
+
+blogPosts.forEach((post, index) => {
+  post.style.opacity = '0';
+  post.style.transform = 'translateY(20px)';
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        post.style.opacity = '1';
+        post.style.transform = 'translateY(0)';
+        observer.unobserve(post);
+      }
+    });
+  }, {
+    rootMargin: '0px',
+    threshold: 0.5
+  });
+
+  observer.observe(post);
+});
+            </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+    <link rel="stylesheet" href="support.css">
+    
+</head>
+<body>
+        <h1>Support</h1>
+        <p>If you need any assistance, please don't hesitate to reach out:</p>
+        <div class="padding">
+            <div class="row">
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="col-sm-8 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+    
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span>CREDIT/DEBIT CARD PAYMENT</span>
+                                    
+                                </div>
+    
+                                <div class="col-md-6 text-right" style="margin-top: -5px;">
+    
+                                      <img  src="https://img.icons8.com/color/36/000000/visa.png" style="height: 200px; width: 200px;">
+                                      <img style="height: 200px; width: 200px;"  src="https://img.icons8.com/color/36/000000/mastercard.png">
+                                      <img style="height: 200px; width: 200px;"  src="https://img.icons8.com/color/36/000000/amex.png">
+                                               
+                                </div>      
+    
+                            </div>    
+      
+                            </div>
+                            <div class="card-body" style="height: 350px">
+                                <div class="form-group">
+                                <label for="cc-number" class="control-label">CARD NUMBER</label>
+                                <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;" required>
+                              </div> <br><br>
+    
+                              <div class="row">
+    
+                                <div class="col-md-6">
+                                     <div class="form-group">
+                                        <label for="cc-exp" class="control-label">CARD EXPIRY</label>
+                                        <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="&bull;&bull; / &bull;&bull;" required>
+                                      </div> <br><br>
+    
+                                    
+                                </div>
+    
+                                 <div class="col-md-6">
+                                   <div class="form-group">
+                                    <label for="cc-cvc" class="control-label">CARD CVC</label>
+                                    <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="&bull;&bull;&bull;&bull;" required>
+                                  </div>
+                                </div>
+                                  
+                              </div>   <br><br>
+    
+          
+                              <div class="form-group">
+                                <label for="numeric" class="control-label">CARD HOLDER NAME</label>
+                                <input  type="text" class="input-lg form-control">
+                              </div>
+    
+                               <div class="form-group">
+                                
+                                <input  value="MAKE PAYMENT" type="button" class="btn btn-success btn-lg form-control" style="font-size: .8rem;">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+
+
+
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required style="display: block;">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="display: block;">
+
+            <label for="message" style="display: block;">Message:</label>
+            <textarea id="message" name="message" required cols="10" rows="12"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    
+<script src="support.js"></script>
+
+</body>
+</html>
